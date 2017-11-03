@@ -1,0 +1,5 @@
+SELECT dept, average(salary) as avg
+FROM employee_data
+GROUP BY dept
+HAVING count(dept) >=8 AND max(salary)<=152000
+ORDER BY DESC;

@@ -12,7 +12,7 @@ data = pd.read_csv(filename,header=None)#saves the files as a dataframe
 #print(data.index)                      #prints the values of the index
 #print(data.index.name)                 #prints the name of the index if there is one
 #print(data.columns.values)             #prints the values of the columns.
-data.columns = ['Name','Role','cost','Salary']
+data.columns = ['Name','Role','Salary']
 #data['Role'].str.strip()               #Tried this method. Doesn't seem to work
 #data['Role']=data['Role'].map(lambda x:x.strip(' ')) #this is for stripping the spaces
 #print(data.columns.values)              #prints the name of the columns.
